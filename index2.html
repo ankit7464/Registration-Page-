@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+        
+        background-size: cover;
+       padding: 1vh;
+        margin: 1vh;
+         background: rgba(40, 120, 84, 0.5);
+        color: blueviolet;
+        height: 62vh;
+        width: 80vh;
+        border: 1vh solid black;
+        position: relative;
+        top: 7vh;
+        left: 60vh;
+       
+    } 
+    
+     h1{
+        text-align: center;
+        font-size: 9vh;
+        color:wheat;
+        font-weight: 500vh;
+        font-style: oblique;
+        padding: 0;
+        margin: -1vh;
+        background-color: grey;
+        height: 12vh;
+    
+    }
+    .email{ 
+        
+        margin: 3vh;
+        padding: 1vh;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+       max-width: 800vh;
+        text-align: center;
+        font-size: 3vh;
+        color: black;
+        font-size: 4vh;
+        font-style: oblique;
+ 
+    }
+    .password{
+        
+        margin: 3vh;
+        padding: 1vh;
+        box-sizing: border-box;
+        margin: auto;
+       max-width: 800vh;
+        text-align: center;
+        font-size: 3vh;
+        color: black;
+        font-weight: 800;
+        font-style: oblique;
+        position: relative;
+        bottom: 2vh;
+     }
+     .name{
+        
+        margin: 3vh;
+        padding: 1vh;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+       max-width: 800vh;
+        text-align: center;
+        font-size: 3vh;
+        color: black;
+        font-size: 4vh;
+        font-style: oblique;
+     }
+     .number{
+        
+        margin: 3vh;
+        padding: 1vh;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+       max-width: 800vh;
+        text-align: center;
+        font-size: 3vh;
+        color: black;
+        font-size: 4vh;
+        font-style: oblique;
+     }
+     .sub{
+        text-align: center;
+        font-size: 3vh;
+     }
+     button {
+    background-color: #ff000d;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    height: 5vh;
+    width: 10vh;
+    font-size: 2vh;
+  }
+button:hover {
+    background-color: #28a745;
+  }
+    
+     .name input, .number input,.email input,
+.password input {
+    text-align: center;
+    width: 90%; 
+    padding: 1vh;
+    margin-top: 1vh;
+    font-size: 5vh;
+    background-color: rgb(118, 161, 210); 
+}
+footer{
+    font-size: 2vh;
+    margin: 0;
+    padding: 0 90vh;
+    background-color: gray;
+    color: azure;
+    height: 6vh;
+    position: relative;
+    bottom: -15vh;
+}
+    </style>
+</head>
+<body>
+    <h1>Register here</h1>
+    <div class="container">
+        <form >
+            <div class="name">
+                <label for="name">Your name</label>
+                <input type="text" placeholder="First and last name" style="font-size: 2vh;">
+            </div>
+            <hr>
+            
+            <div class="email">
+                <label for="em">Enter your email</label>
+                <input type="email" placeholder="enter email" style="font-size: 2vh;">
+
+            </div>
+            <hr>
+            
+            <div class="number">
+                <label for="phoneNumber">Mobile Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+
+            </div>
+            <hr>
+            <div class="password">
+                <label for="pas">Enter your password</label>
+                <input type="password" placeholder="enter password" style="font-size: 2vh;">
+
+            </div>
+            <hr>
+            <div class="sub">
+              <button onclick="redirectToAnotherPage()">Submit</button>
+
+            </div>
+          
+            
+        </form>
+    </div> 
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = 'intern2html.html';
+        }
+    </script>
+    
+    <footer>
+                <ul>
+                    <li>copyright &copy; ankitbosssystem</li>
+                    <li>contact developer <a href = "#">7464893602</a></li>    
+                </ul>
+        </footer>
+</body>
+</html>
